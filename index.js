@@ -2,7 +2,7 @@
 var MongoClient=require('mongodb').MongoClient;
 MongoClient.connect('mongodb://127.0.0.1:27017/stixdb', function(err, connection) {
     var stixMsgs = connection.collection('messages'); 
-        stixMsgs.find().toArray(function(err, documents) { 
+        stixMsgs.find({Targets: '5'}).toArray(function(err, documents) { 
             console.dir(documents);
             connection.close();
         });  
