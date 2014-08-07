@@ -17,5 +17,9 @@ var handle={}
 handle["/"]=requestHandlers.start;
 handle["/start"]=requestHandlers.start;
 handle["/upload"]=requestHandlers.upload;
+handle["/startStylesheet"]=requestHandlers.startStylesheet;
+handle["/startScript"]=requestHandlers.startScript;
+handle["/bonsaiLogo"]=requestHandlers.bonsaiLogo;
+handle["/greenBackground"]=requestHandlers.greenBackground;
 
 server.start(router.route,handle);

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Bonsai: Cyber Threat Engine</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+        <script type = "text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header" class="header">
+                <table class="header" align="right">
+                    <tr class="header">
+                        <td class="header">Howdy, Hayley!</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="sidebar">
+                    <table id="sidebarContents" class="sidebar">
+                        <tr class="sidebar">
+                            <td id="newQuery" class="sidebar">New Query</td>
+                        </tr>
+                        <tr class="sidebar">
+                            <td id="favorites" class="sidebar">Favorites</td>
+                        </tr>
+                        <tr class="sidebar">
+                            <td id="history" class="sidebar">History</td>
+                        </tr>
+                        <tr class="sidebar">
+                            <td id="related" class="sidebar">Related</td>
+                        </tr>
+                    </table>
+                <?php
+      $welcome = "Let's get started with PHP!";
+      echo $welcome;
+      ?>
+                </div>
+            <div id="content" align="center">
+                <div id="box" align="center">
+                    <a href=file:///Users/hayleypainter/GitHubRepositories/BONSAI/BonsaiUI/index.html><img id="logo" src="file:///Users/hayleypainter/GitHubRepositories/BONSAI/BonsaiUI/resources/bonsaiLogo.jpg" /></a>
+                    <!-- HTML for SEARCH BAR -->
+                    <div id="tfheader">
+                        <form id="tfnewsearch" method="get" action="file:///Users/hayleypainter/GitHubRepositories/BONSAI/BonsaiUI/searchResults/index.html">
+                            <input type="text" id="tfq" class="tftextinput2" name="q" size="40" maxlength="120" value='How shall we continue?'></input>
+                            <input type="submit" id="goBtn" value="Go" class="tfbutton2"></input>
+                        </form>
+                        <div class="tfclear"></div>
+                    </div>
+                    <!--End of search box stuff-->
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <img id="exampleIcon" src="http://www.challies.com/sites/all/themes/challies/images/3-bar-menu.png" height="14" />
+                            </td>
+                            <td>Examples</td>
+                            <td>
+                                <img id="exampleIcon" src="http://upload.wikimedia.org/wikipedia/commons/2/25/Icon-round-Question_mark.jpg" height="14" />
+                            </td>
+                            <td>Help</td>
+                        </tr>
+                    </table>
+                    <!--Process Query-->
+                </div>
+                <div id="results">
+                    <table id="resultsTable" border=1 frame=void rules=rows>
+                        <tr>
+                            <td id="queryText" class="resultsClass" height="50" valign="top"></td>
+                            <td align="right" class="resultsClass"><a href="http://google.com">edit</a></td>
+                        </tr>
+                        <tr>
+                            <td id="inputInterpretation" class="resultsClass" height="50" valign="top"></td>
+                        </tr>
+                        <tr>
+                            <td id="queryResults" class="resultsClass" height="200" valign="top"></td>
+                        </tr>
+                        <tr>
+                            <td id="relatedQueries" class="resultsClass" height="100" valign="top"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="footer">© Barnstorm Research 2014</div>
+        </div>
+    </body>
+</html>
